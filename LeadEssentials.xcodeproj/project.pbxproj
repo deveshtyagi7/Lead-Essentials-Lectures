@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		10488E8027574EF6005E9505 /* LeadEssentials.h in Headers */ = {isa = PBXBuildFile; fileRef = 10488E7F27574EF6005E9505 /* LeadEssentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10488E8727574F10005E9505 /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10488E8627574F10005E9505 /* Singletons.swift */; };
+		10488E892757633D005E9505 /* FeedLoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10488E882757633D005E9505 /* FeedLoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10488E7C27574EF6005E9505 /* LeadEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeadEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10488E7F27574EF6005E9505 /* LeadEssentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeadEssentials.h; sourceTree = "<group>"; };
+		10488E8627574F10005E9505 /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
+		10488E882757633D005E9505 /* FeedLoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				10488E7F27574EF6005E9505 /* LeadEssentials.h */,
+				10488E8627574F10005E9505 /* Singletons.swift */,
+				10488E882757633D005E9505 /* FeedLoder.swift */,
 			);
 			path = LeadEssentials;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					10488E7B27574EF6005E9505 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -129,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10488E892757633D005E9505 /* FeedLoder.swift in Sources */,
+				10488E8727574F10005E9505 /* Singletons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		10488E8427574EF6005E9505 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +290,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +299,7 @@
 		10488E8527574EF6005E9505 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
